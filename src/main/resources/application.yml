@@ -1,0 +1,20 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/sxuserfee?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+    
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8081
+  
+  
+# 允许生成代码的 schema 集合
+allowSchema: mstdata,bommgmt,chgmgmt,cfgmgmt,integration,cust
