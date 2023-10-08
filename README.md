@@ -1,10 +1,11 @@
 # hibernate-code-generate 生成 java 代码
+# fork from https://github.com/yupengj/hibernate-reverse
 
 ## 实现技术
 基于 spring-boot(2.2.0, web, thymeleaf, jdbc)  + velocity（V1.4.7）实现。构建工具 maven
 
 ## 支持数据库
-oracle psotgresql mysql
+mysql
 
 ## 如何配置与扩展
 - 生成代码模板在 resources/codes 目录下可自行修改
@@ -13,10 +14,9 @@ oracle psotgresql mysql
 ## 使用方法-源码
 1. clone 源码 `git clone https://github.com/v2future/hibernate-code-generate`
 2. 使用 maven 构建
-3. 如果是 oracle 数据库把 lib 下的 oracle 驱动包 add to buile path
-4. 修改 application.yml 文件数据库连接
-5. 运行 GenerateCodeApplication 类中的 main 方法 
-6. 启动成功后访问 http://localhost:8080
+3. 修改 application.yml 文件数据库连接
+4. 运行 GenerateCodeApplication 类中的 main 方法 
+5. 启动成功后访问 http://localhost:8080
 
 # 页面说明
 
